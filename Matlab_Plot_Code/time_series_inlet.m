@@ -19,12 +19,13 @@ T5 = readtable("/Users/loganknudsen/Desktop/adcirc_v55.01/work/inlet_w_100_km/fo
 data5 = table2array(T5(find(table2array(T5(:,"Var1"))==node),"Var2"));
 plot(data5,"LineWidth",2)
 xticks(0:100:800)
-xticklabels(string((0:100:800)*5.23968))
+xticklabels(string((0:1:8)))
 xlim([0 824+1])
 ylim([min(data0)-0.1 max(data5)+0.2])
 title("Storm Surge Height v. Time for Idealized Inlet")
-xlabel("Time (1\times10^2 s)")
+xlabel("Time (5.23968\times10^4 s)")
 ylabel("Storm Surge (m)")
-legend("0 km","5 km","25 km","50 km","75 km","100 km","Location","northwest")
+legend("0 km","5 km","25 km","50 km","75 km","100 km","Location","northeast")
+fontsize(18,"point")
 hold off
 saveas(gcf,"/Users/loganknudsen/Documents/GitHub/StormSurge/Manuscript_Plots/ADCIRC_plots/inlet_time_series.png")

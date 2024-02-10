@@ -21,6 +21,7 @@ scatter(table2array(x),table2array(y),2, w1)
 xlabel("Longitude (^o E)")
 ylabel("Latitude (^o N)")
 title("Square Difference of Max Storm Surge")
+fontsize(18,"points")
 c = colorbar;
 c.Label.String = "Square Difference";
 saveas(gcf,"/Users/loganknudsen/Documents/GitHub/StormSurge/Manuscript_Plots/ADCIRC_plots/mean_square_difference.png")
