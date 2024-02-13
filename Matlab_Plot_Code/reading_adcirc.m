@@ -130,8 +130,9 @@ l = [0,5,25,50,75,100];
 w = [mean(w0),mean(w5),mean(w25),mean(w50),mean(w75),mean(w100)];
 plot(l,w,"DisplayName","Inlet")
 xlabel("Glacier Width(km)")
-ylabel("Mean Max Storm Surge")
-title("Mean Max Storm Surge vs Glacier Widt")
+ylabel("Mean Max Storm Surge(m)")
+title("Mean Max Storm Surge vs Glacier Width")
 legend
+fontsize(18,"points")
 hold off
 saveas(gcf,"/Users/loganknudsen/Documents/GitHub/StormSurge/meanmaxstormsurge.png")

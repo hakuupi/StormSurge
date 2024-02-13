@@ -7,4 +7,5 @@ plot(table2array(T(:,"t")),table2array(T(:,"V_sum")), "LineWidth",2,"LineStyle",
 ylabel("Cumulative Volumne (km^3)","FontSize",12)
 legend("Sea Level Rise", "Cumulative Volume","Location","northwest")
 title("Cumulative Volume and Sea Level Rise over Time")
+fontsize(16,"points")
 saveas(gcf,"/Users/loganknudsen/Documents/GitHub/StormSurge/Experiment_Data/data_single_cases_analysis/sea_level_rise_projections/w50.0_projection.png")
